@@ -26,7 +26,7 @@ define( 'MY_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
 // --- Module Configuration ---
 // Manually toggle these booleans to enable/disable modules.
-define( 'OKO_KSK_ENABLE_ACCOUNT_FIELDS', true ); // Set to false to disable WooCommerce features.
+define( 'OKO_MODULE_ENABLE_ACCOUNT_FIELDS', true ); // Set to false to disable WooCommerce features.
 // --- End Module Configuration ---
 
 
@@ -54,7 +54,7 @@ class OKO_Kitchensink {
         $this->hooks();
 
         if ( class_exists( 'WooCommerce' ) { 
-        	if( OKO_KSK_ENABLE_ACCOUNT_FIELDS ) {
+        	if( OKO_MODULE_ENABLE_ACCOUNT_FIELDS ) {
 	            require_once MY_PLUGIN_PATH . 'modules/wc_account_fields.php';
 	        }
 	    }
